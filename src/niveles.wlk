@@ -16,11 +16,11 @@ object tutorial1 {
 object tutorial2 {
 
 	method iniciar() {
-		game.addVisual(manzana)
-		game.addVisual(alpiste)
+		//game.addVisual(manzana)
+		//game.addVisual(alpiste)
 		game.addVisual(nido)
 		game.addVisual(silvestre)
-		game.addVisual(pepita)
+		game.addVisualCharacter(pepita)
 		config.configurarTeclas()
 	}
 
@@ -33,7 +33,7 @@ object tutorial3 {
 		game.addVisual(alpiste)
 		game.addVisual(nido)
 		game.addVisual(silvestre)
-		game.addVisual(pepita)
+		game.addVisualCharacter(pepita)
 		config.configurarTeclas()
 		config.configurarColisiones()
 	}
@@ -45,7 +45,6 @@ object config {
 	method configurarTeclas() {
 		keyboard.left().onPressDo({ pepita.irA(pepita.position().left(1))})
 		keyboard.right().onPressDo({ pepita.irA(pepita.position().right(1))})
-		// Completar para que se pueda mover arriba y abajo
 	}
 
 	method configurarColisiones() {
