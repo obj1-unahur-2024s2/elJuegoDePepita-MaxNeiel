@@ -16,8 +16,8 @@ object tutorial1 {
 object tutorial2 {
 
 	method iniciar() {
-		//game.addVisual(manzana)
-		//game.addVisual(alpiste)
+		game.addVisual(manzana)
+		game.addVisual(alpiste)
 		game.addVisual(nido)
 		game.addVisual(silvestre)
 		game.addVisualCharacter(pepita)
